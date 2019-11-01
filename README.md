@@ -7,7 +7,7 @@ Calcium imaging allows us to measure activity in single cells and have a measure
 
 This repository describes steps to run Calcium Imaging processing of human iPSC cultures across development.
 
-[Step0]: Upload data to cluster 
+[Step0]: Upload data to cluster\
 [Step1]: Convert .czi time series files to .mat files 
 [Step2]: Parallel with step 1 run segmentation of the red image to get the ROI masks by adjusting thresholds based on scope
 [Step3]: Extract traces from step1 using masks from step2
