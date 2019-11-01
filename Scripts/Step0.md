@@ -18,6 +18,13 @@ rsync [options] source destination
 ``` Bash
 [srv07 /data/users/madhavi.tippani]$ rsync -avzh --progress /data/Neural_Plasticity/Maddy/Ca_Img/test ssh mtippani@jhpce-transfer01.jhsph.edu:/dcl01/lieber/ajaffe/Maddy/Ca_Img/vignette 
 Enter passphrase for key '/data/users/madhavi.tippani/.ssh/id_rsa': Enter your password for JHPCE or the Key if you have your system setup with SSH Keypair
+
+rsync: link_stat "/data/users/madhavi.tippani/ssh" failed: No such file or directory (2)
+test/
+
+sent 96 bytes  received 16 bytes  14.93 bytes/sec
+total size is 0  speedup is 0.00
+
 ```
 
 To setup SSH Keypair for password less login [SSH Keypair](https://jhpce.jhu.edu/knowledge-base/authentication/ssh-key-setup/)
