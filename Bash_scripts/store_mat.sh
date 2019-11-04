@@ -3,8 +3,8 @@
 #$ -m bea
 #$ -cwd
 #$ -l mem_free=25G,h_vmem=25G,h_stack=256M,h_fsize=10G
-#$ -o /dcl01/lieber/ajaffe/Maddy/Ca_Img/Stephanie/SCZ/Brown/storemat_log.txt
-#$ -e /dcl01/lieber/ajaffe/Maddy/Ca_Img/Stephanie/SCZ/Brown/storemat_log.txt
+#$ -o /dcl01/lieber/ajaffe/Maddy/Ca_Img/Stephanie/SCZ/Brown/storemat_logs/$TASK_ID.txt
+#$ -e /dcl01/lieber/ajaffe/Maddy/Ca_Img/Stephanie/SCZ/Brown/storemat_logs/$TASK_ID.txt
 #$ -t 1-10
 #$ -m a
 
@@ -22,7 +22,7 @@ echo "Sample id: $(cat  /dcl01/lieber/ajaffe/Maddy/Ca_Img/Stephanie/SCZ/Brown/Br
 echo "****"
 export TZ=America/New_York
 
-FILE1=$(cat /dcl01/lieber/ajaffe/Maddy/Ca_Img/Brittany/BD_iPSC_PTHS_Nx_780/experiment2/18wks/18wkslist.txt | awk '{print $NF}' | awk "NR==${SGE_TASK_ID}")
+FILE1=$(cat  /dcl01/lieber/ajaffe/Maddy/Ca_Img/Stephanie/SCZ/Brown/Brownlist.txt | awk '{print $NF}' | awk "NR==${SGE_TASK_ID}")
 toolbox=/dcl01/lieber/ajaffe/Maddy/Ca_Img/vignette/toolbox
 bftools=/dcl01/lieber/ajaffe/Maddy/Ca_Img/vignette/toolbox/bfmatlab
 
