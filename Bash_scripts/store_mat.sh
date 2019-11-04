@@ -18,6 +18,9 @@ echo "Job name: ${JOB_NAME}"
 echo "Hostname: ${HOSTNAME}"
 echo "Task id: ${SGE_TASK_ID}"
 echo "****"
+echo "Sample id: $(cat  /dcl01/lieber/ajaffe/Maddy/Ca_Img/Stephanie/SCZ/Brown/Brownlist.txt | awk '{print $NF}' | awk "NR==${SGE_TASK_ID}")"
+echo "****"
+
 
 export TZ=America/New_York
 
