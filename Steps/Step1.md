@@ -50,4 +50,7 @@ echo "Sample id: $(cat  /dcl01/lieber/ajaffe/Maddy/Ca_Img/Stephanie/SCZ/Brown/Br
 You can manually make this text file or use the following `R` code to make one.
 
 ``` R
+path1 = "/dcl01/lieber/ajaffe/Maddy/Ca_Img/Stephanie/SCZ/Brown"  #dont include forward slash at end
+listOfFiles = list.files(path1,pattern = glob2rx("*G.czi"),full.names=TRUE, recursive = TRUE) #recursive TRUE for subdirectories
+write.table(listOfFiles,file = paste0(path1,"/store_mat_list.txt"), row.names = FALSE, col.names = FALSE, quote = FALSE)# stores the text file in the main data directory
 ```
