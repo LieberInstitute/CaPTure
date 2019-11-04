@@ -20,10 +20,9 @@ echo "Task id: ${SGE_TASK_ID}"
 echo "****"
 echo "Sample id: $(cat  /dcl01/lieber/ajaffe/Maddy/Ca_Img/Stephanie/SCZ/Brown/Brownlist.txt | awk '{print $NF}' | awk "NR==${SGE_TASK_ID}")"
 echo "****"
-
-
 export TZ=America/New_York
 
+FILE1=$(cat /dcl01/lieber/ajaffe/Maddy/Ca_Img/Brittany/BD_iPSC_PTHS_Nx_780/experiment2/18wks/18wkslist.txt | awk '{print $NF}' | awk "NR==${SGE_TASK_ID}")
 toolbox=/dcl01/lieber/ajaffe/Maddy/Ca_Img/vignette/toolbox
 bftools=/dcl01/lieber/ajaffe/Maddy/Ca_Img/vignette/toolbox/bfmatlab
 
