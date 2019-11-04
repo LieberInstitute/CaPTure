@@ -5,7 +5,7 @@ Calcium imaging is a popular tool among neuroscientists because of its capabili
 The technique measures the calcium ions (proxy for neuronal activity) by imaging fluorescence intensity in neurons loaded with calcium-sensitive dye.
 Calcium imaging allows us to measure activity in single cells and have a measure of network dynamics. 
 
-This repository describes steps to run Calcium Imaging processing of human iPSC cultures across development.
+This repository describes steps to run Calcium Image processing data of human iPSC cultures across development.
 
 [Step0](https://github.com/LieberInstitute/CaImg_cellcultures/blob/master/Scripts/Step0.md): Upload data to JHPCE cluster\
 [Step1]: Convert .czi time series files to .mat files\
