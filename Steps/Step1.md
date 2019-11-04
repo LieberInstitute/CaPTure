@@ -32,9 +32,22 @@ store_mat(filename, bftools)
 end
 ```
 
-If the conversion time is more batch run them using the [store_mat.sh]( bash script like below on jhpce
+If the conversion time is more batch run all the files using the [store_mat.sh](https://github.com/LieberInstitute/CaImg_cellcultures/blob/master/Bash_scripts/store_mat.sh) bash script like below on jhpce.
 
 ``` bash
 [jhpce01 /dcl01/lieber/ajaffe/Maddy]$ qrsh /dcl01/lieber/ajaffe/Maddy/Ca_Img/code_pipeline/store_mat.sh
 ```
+The bash script needs path to user created `logs` folder to store function progress and any errors. Line 6 and 7 in [store_mat.sh](https://github.com/LieberInstitute/CaImg_cellcultures/blob/master/Bash_scripts/store_mat.sh)
 
+``` bash
+#$ -o /dcl01/lieber/ajaffe/Maddy/Ca_Img/Stephanie/SCZ/Brown/storemat_logs/$TASK_ID.txt
+#$ -e /dcl01/lieber/ajaffe/Maddy/Ca_Img/Stephanie/SCZ/Brown/storemat_logs/$TASK_ID.txt
+```
+It also needs a text file with list of all files to batch run. Line 21 and 25 in [store_mat.sh](https://github.com/LieberInstitute/CaImg_cellcultures/blob/master/Bash_scripts/store_mat.sh)
+```bash
+echo "Sample id: $(cat  /dcl01/lieber/ajaffe/Maddy/Ca_Img/Stephanie/SCZ/Brown/Brownlist.txt | awk '{print $NF}' | awk "NR==${SGE_TASK_ID}")"
+```
+You can manually make this text file or use the following `R` code to make one.
+
+``` R
+```
