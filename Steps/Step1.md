@@ -12,6 +12,31 @@ bftools = '/LieberInstitute/CaImg_cellcultures/tree/master/toolbox/bfmatlab';
 
 addpath(genpath(toolbox)) %Add the toolbox to the matlab working directory when ever you begin a new session
 store_mat(filename, bftools)
+Reading Images:  1  of  2400 Frames
+Reading Images:  101  of  2400 Frames
+Reading Images:  201  of  2400 Frames
+Reading Images:  301  of  2400 Frames
+Reading Images:  401  of  2400 Frames
+Reading Images:  501  of  2400 Frames
+Reading Images:  601  of  2400 Frames
+Reading Images:  701  of  2400 Frames
+Reading Images:  801  of  2400 Frames
+Reading Images:  901  of  2400 Frames
+Reading Images:  1001  of  2400 Frames
+Reading Images:  1101  of  2400 Frames
+Reading Images:  1201  of  2400 Frames
+Reading Images:  1301  of  2400 Frames
+Reading Images:  1401  of  2400 Frames
+Reading Images:  1501  of  2400 Frames
+Reading Images:  1601  of  2400 Frames
+Reading Images:  1701  of  2400 Frames
+Reading Images:  1801  of  2400 Frames
+Reading Images:  1901  of  2400 Frames
+Reading Images:  2001  of  2400 Frames
+Reading Images:  2101  of  2400 Frames
+Reading Images:  2201  of  2400 Frames
+Reading Images:  2301  of  2400 Frames
+Elapsed time is 32.663796 seconds.
 ```
 The output is a matfile with saved in the same path as the filename. 
 
@@ -27,6 +52,7 @@ addpath(genpath(toolbox)) %Add the toolbox to the matlab working directory when 
 for i = 1:numel(myfiles)
 filename = fullfile(myfiles(i).folder, myfiles(i).name);
 store_mat(filename, bftools)
+disp(['Completed: file',num2str(i)])
 end
 ```
 
