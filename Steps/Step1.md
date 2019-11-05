@@ -13,9 +13,9 @@ bftools = '/LieberInstitute/CaImg_cellcultures/tree/master/toolbox/bfmatlab';
 addpath(genpath(toolbox)) %Add the toolbox to the matlab working directory when ever you begin a new session
 store_mat(filename, bftools)
 ```
+The output is a matfile with saved in the same path as the filename. 
 
 If the conversion time is less use for loop to convert the entire data set file by file
-
 ```matlab
 
 myfiles = dir('/PathToDataset/*G.czi');
