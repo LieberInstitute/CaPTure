@@ -33,8 +33,8 @@ for series = 1: MetaData.SeriesCount
                 framecounter = framecounter + 1;
                  % update waitbar
                 wstr = {'Reading Images: ', num2str(framecounter), ' of ', num2str(totalframes),'Frames' };
-                waitbar(framecounter / totalframes, h, strjoin(wstr))
-
+                %waitbar(framecounter / totalframes, h, strjoin(wstr))
+                    if mod(framecounter,100)==1, disp(strjoin(wstr)), end
                 % get linear index of the plane (1-based)
                 iplane = loci.formats.FormatTools.getIndex(reader, zplane - 1, channel - 1, timepoint -1) +1;
                 % get frame for current series
