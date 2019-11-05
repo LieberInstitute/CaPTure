@@ -38,7 +38,7 @@ Reading Images:  2201  of  2400 Frames
 Reading Images:  2301  of  2400 Frames
 Elapsed time is 32.663796 seconds.
 ```
-The output is a matfile with saved in the same path as the filename. 
+The output is a matfile saved in the same path as the filename. 
 
 If the conversion time is less use for loop to convert the entire data set file by file
 ```matlab
