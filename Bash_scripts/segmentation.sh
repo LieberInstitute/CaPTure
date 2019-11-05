@@ -29,7 +29,7 @@ toolbox=/dcl01/lieber/ajaffe/Maddy/Ca_Img/vignette/toolbox
 microscope=780
 thresh=4
 
-matlab -nodesktop -nosplash -r "addpath(genpath('toolbox')); extract_traces_SD('$FILE1','$toolbox','$microscope',$thresh);exit;" 
+matlab -nodesktop -nosplash -r "addpath(genpath('$toolbox')); extract_traces_SD('$FILE1','$microscope',$thresh);exit;" 
 
 echo "**** Job ends ****"
 
