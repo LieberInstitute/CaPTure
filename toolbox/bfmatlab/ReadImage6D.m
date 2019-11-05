@@ -46,7 +46,7 @@ for series = 1: MetaData.SeriesCount
 end
 
 % close waitbar
-close(h)
+% close(h)
 
 % close BioFormats Reader
 reader.close();
