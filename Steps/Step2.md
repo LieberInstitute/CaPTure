@@ -40,6 +40,25 @@ If the segmentation time is more batch run all the files using the [segmentation
 ``` bash
 [jhpce01 /dcl01/lieber/ajaffe/Maddy]$ qrsh /dcl01/lieber/ajaffe/Maddy/Ca_Img/code_pipeline/segmentation.sh
 ```
-The bash script needs path to user created `logs` folder to store function progress and any errors. Line 6 and 7 in [segmentation.sh](https://github.com/LieberInstitute/CaImg_cellcultures/blob/master/Bash_scripts/store_mat.sh)
+The bash script needs path to user created `Seg_logs` folder to store function progress and any errors. Line 6 and 7 in [segmentation.sh](https://github.com/LieberInstitute/CaImg_cellcultures/blob/master/Bash_scripts/store_mat.sh)
+
+```bash
+#$ -o /dcl01/lieber/ajaffe/Maddy/Ca_Img/Stephanie/SCZ/Brown/Seg_logs/$TASK_ID.txt
+#$ -e /dcl01/lieber/ajaffe/Maddy/Ca_Img/Stephanie/SCZ/Brown/Seg_logs/$TASK_ID.txt
+```
+It also needs a text file with list of all files to batch run. Line 22 and 27 in [segmentation.sh](https://github.com/LieberInstitute/CaImg_cellcultures/blob/master/Bash_scripts/store_mat.sh)
+```bash
+echo "Sample id: $(cat /dcl01/lieber/ajaffe/Maddy/Ca_Img/Stephanie/SCZ/Brown/segmentation_list.txt | awk '{print $NF}' | awk "NR==${SGE_TASK_ID}")"
+FILE1=$(cat /dcl01/lieber/ajaffe/Maddy/Ca_Img/Stephanie/SCZ/Brown/segmentation_list.txt | awk '{print $NF}' | awk "NR==${SGE_TASK_ID}")
+```
+
+You can manually make this text file or use the R code to make one.
+
+```R
+path1 = "/dcl01/lieber/ajaffe/Maddy/Ca_Img/Stephanie/SCZ/Brown"  #dont include forward slash at end
+listOfFiles = list.files(path1,pattern = glob2rx("*R.czi"),full.names=TRUE, recursive = TRUE) #recursive TRUE for subdirectories
+write.table(listOfFiles,file = paste0(path1,"/segmentation_list.txt"), row.names = FALSE, col.names = FALSE, quote = FALSE)# stores the text file in the main data directory
+```
+
 
 
