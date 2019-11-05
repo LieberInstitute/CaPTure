@@ -40,7 +40,7 @@ Elapsed time is 32.663796 seconds.
 ```
 The output is a matfile saved in the same path as the filename. 
 
-If the conversion time is less use for loop to convert the entire data set file by file
+If the conversion time is less use `for loop` to convert the entire data set file by file
 ```matlab
 
 myfiles = dir('/PathToDataset/*G.czi');
