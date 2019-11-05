@@ -1,8 +1,8 @@
 #To convert `.czi` time series to `.mat` files
 
-Matlab function used to convert the file is [store_mat](https://github.com/LieberInstitute/CaImg_cellcultures/blob/master/Scripts/store_mat.m)
+Matlab function used to convert the file is [store_mat](https://github.com/LieberInstitute/CaImg_cellcultures/blob/master/toolbox/store_mat.m)
 
-Download the [toolbox](https://github.com/LieberInstitute/CaImg_cellcultures/tree/master/toolbox) directory to run the command. Inputs to the [store_mat](https://github.com/LieberInstitute/CaImg_cellcultures/blob/master/Scripts/store_mat.m) function are paths to the [.czi](https://github.com/LieberInstitute/CaImg_cellcultures/blob/master/test_data/SS1803_50_Lime_A1_DIV42_1R.czi) file and the [bftools](https://github.com/LieberInstitute/CaImg_cellcultures/tree/master/toolbox/bfmatlab) package stored in the [toolbox](https://github.com/LieberInstitute/CaImg_cellcultures/tree/master/toolbox). 
+Download the [toolbox](https://github.com/LieberInstitute/CaImg_cellcultures/tree/master/toolbox) directory to run the command. Inputs to the [store_mat](https://github.com/LieberInstitute/CaImg_cellcultures/blob/master/toolbox/store_mat.m) function are paths to the [.czi](https://github.com/LieberInstitute/CaImg_cellcultures/blob/master/test_data/SS1803_50_Lime_A1_DIV42_1R.czi) file and the [bftools](https://github.com/LieberInstitute/CaImg_cellcultures/tree/master/toolbox/bfmatlab) package stored in the [toolbox](https://github.com/LieberInstitute/CaImg_cellcultures/tree/master/toolbox). 
 
 To run a single file on matlab
 ```matlab
@@ -12,8 +12,6 @@ bftools = '/LieberInstitute/CaImg_cellcultures/tree/master/toolbox/bfmatlab';
 
 addpath(genpath(toolbox)) %Add the toolbox to the matlab working directory when ever you begin a new session
 store_mat(filename, bftools)
-
-
 ```
 
 If the conversion time is less use for loop to convert the entire data set file by file
