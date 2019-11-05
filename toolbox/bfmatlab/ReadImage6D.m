@@ -15,7 +15,7 @@ MetaData = GetOMEData(filename);
 reader = bfGetReader(filename);
 
 % add progress bar
-h = waitbar(0,'Processing Data ...');
+% h = waitbar(0,'Processing Data ...');
 totalframes = MetaData.SeriesCount * MetaData.SizeC * MetaData.SizeZ * MetaData.SizeT;
 framecounter = 0;
 
