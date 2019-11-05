@@ -40,6 +40,6 @@ If the segmentation time is more batch run all the files using the [segmentation
 ``` bash
 [jhpce01 /dcl01/lieber/ajaffe/Maddy]$ qrsh /dcl01/lieber/ajaffe/Maddy/Ca_Img/code_pipeline/segmentation.sh
 ```
-The bash script needs path to user created `logs` folder to store function progress and any errors. Line 6 and 7 in [store_mat.sh](https://github.com/LieberInstitute/CaImg_cellcultures/blob/master/Bash_scripts/store_mat.sh)
+The bash script needs path to user created `logs` folder to store function progress and any errors. Line 6 and 7 in [segmentation.sh](https://github.com/LieberInstitute/CaImg_cellcultures/blob/master/Bash_scripts/store_mat.sh)
 
 
