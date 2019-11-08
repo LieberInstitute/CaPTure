@@ -1,12 +1,10 @@
-function segmentation(filename,toolbox,microscope,T)
+function segmentation(filename,microscope,T)
 
 % redfiles = 'Y:\Calcium Imaging\Spinning_Disk_images\GABA_Glutamate_Antagonists_PTHS_hNeurons';
 % ext = '*red.czi';
 % outputpath = 'C:\Users\MBF User\Desktop\new';
 % microscope = 'SD'
 tic
-
-addpath(genpath(toolbox))
 
 warning('off','all');
 out = ReadImage6D(filename); %read the file using bioformats toolbox
