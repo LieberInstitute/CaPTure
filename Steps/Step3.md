@@ -35,7 +35,7 @@ extract_traces(filename,green,red)
 disp(['Completed: file',num2str(i)])
 end
 ```
-If the segmentation time is more batch run all the files using the [extract_traces.sh](https://github.com/LieberInstitute/CaImg_cellcultures/blob/master/Bash_scripts/segmentation.sh) bash script like below on jhpce.
+If the extraction time is more batch run all the files using the [extract_traces.sh](https://github.com/LieberInstitute/CaImg_cellcultures/blob/master/Bash_scripts/extract_traces.sh) bash script like below on jhpce.
 
 ``` bash
 [jhpce01 /dcl01/lieber/ajaffe/Maddy]$ qrsh /dcl01/lieber/ajaffe/Maddy/Ca_Img/code_pipeline/extract_traces.sh
@@ -49,7 +49,7 @@ The bash script needs path to user created `extract_logs` folder to store functi
 It also needs a text file with list of all files to batch run. Line 22 and 27 in [extract_traces.sh](https://github.com/LieberInstitute/CaImg_cellcultures/blob/master/Bash_scripts/extract_traces.sh)
 ```bash
 echo "Sample id: $(cat /dcl01/lieber/ajaffe/Maddy/Ca_Img/Stephanie/SCZ/Brown/extract_traces_list.txt | awk '{print $NF}' | awk "NR==${SGE_TASK_ID}")"
-FILE1=$(cat /dcl01/lieber/ajaffe/Maddy/Ca_Img/Stephanie/SCZ/Brown/extract_tracesn_list.txt | awk '{print $NF}' | awk "NR==${SGE_TASK_ID}")
+FILE1=$(cat /dcl01/lieber/ajaffe/Maddy/Ca_Img/Stephanie/SCZ/Brown/extract_traces_list.txt | awk '{print $NF}' | awk "NR==${SGE_TASK_ID}")
 ```
 
 You can manually make this text file or use the R code to make one.
