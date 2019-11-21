@@ -44,7 +44,7 @@ set(gcf,'InvertHardCopy', 'off')
 set(gcf,'Position',1.0e+03 *[0.0010    0.0410    2.5600    1.3273])
 set(gcf,'PaperPosition',[0 0 10 m])
 
-figname = [filname(1:end-4),'_traces.jpg'];
+figname = [filename(1:end-4),'_traces.jpg'];
 print(figname,'-djpeg')
 close all
 
