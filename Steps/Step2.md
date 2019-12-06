@@ -1,9 +1,10 @@
-#To segment the ROIs from the red image.
+# To segment the ROIs from the red image.
 
 Matlab function used is [segmentation](https://github.com/LieberInstitute/CaImg_cellcultures/blob/master/toolbox/segmentation.m)
 in the [toolbox](https://github.com/LieberInstitute/CaImg_cellcultures/tree/master/toolbox) directory. 
 Inputs to the [segmentation](https://github.com/LieberInstitute/CaImg_cellcultures/blob/master/toolbox/segmentation.m) function are paths to the red image[*R.czi](https://github.com/LieberInstitute/CaImg_cellcultures/blob/master/test_data/SS1803_50_Lime_A1_DIV42_1R.czi) file,
 microscope and threshold.
+The output of this function produces a Jpeg and a matfile saved in the same directory as the input filename.
 
 To run a single file on matlab
 ```matlab
@@ -58,6 +59,3 @@ path1 = "/dcl01/lieber/ajaffe/Maddy/Ca_Img/Stephanie/SCZ/Brown"  #dont include f
 listOfFiles = list.files(path1,pattern = glob2rx("*R.czi"),full.names=TRUE, recursive = TRUE) #recursive TRUE for subdirectories
 write.table(listOfFiles,file = paste0(path1,"/segmentation_list.txt"), row.names = FALSE, col.names = FALSE, quote = FALSE)# stores the text file in the main data directory
 ```
-
-
-
