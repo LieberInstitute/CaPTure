@@ -1,8 +1,10 @@
-#To extract traces from green time series using masks from red images
+# To extract traces from green time series using masks from red images
 
 Matlab function [extract_traces](https://github.com/LieberInstitute/CaImg_cellcultures/blob/master/toolbox/extract_traces.m)
 in the [toolbox](https://github.com/LieberInstitute/CaImg_cellcultures/tree/master/toolbox) directory is used. 
 Inputs to the [extract_traces](https://github.com/LieberInstitute/CaImg_cellcultures/blob/master/toolbox/extract_traces.m) function are path to the green video mat file `*G.mat` file, sub strings in the red and green mat filenames that make them distinct. 
+
+The output of this function produces a jpeg and a matfile with the same filename ending with `*traces` in the same directory as the input file. Jpeg shows traces of all the ROIs in the image while the matfile consists of a table named `ROI` with rows being timepoint and columns being the avergae intensity of all pixels of given ROI at a given timepoint.
 
 For example if your green mat file is `SS1803_50_Lime_A1_DIV42_1G.mat` and the corresponding red mask file is `SS1803_50_Lime_A1_DIV42_1R_ROI_info_4.mat`
 
