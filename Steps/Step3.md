@@ -6,7 +6,7 @@ Inputs to the [extract_traces](https://github.com/LieberInstitute/CaImg_cellcult
 
 The output of this function produces a jpeg and a matfile with the same filename ending with `*traces` in the same directory as the input file. Jpeg shows traces of all the ROIs in the image while the matfile consists of a table named `ROI` with rows being timepoint and columns being the avergae intensity of all pixels of given ROI at a given timepoint.
 
-For example if your green mat file is `SS1803_50_Lime_A1_DIV42_1G.mat` and the corresponding red mask file is `SS1803_50_Lime_A1_DIV42_1R_ROI_info_4.mat`. The resulting output files are `SS1803_50_Lime_A1_DIV42_1G_traces.mat` and `SS1803_50_Lime_A1_DIV42_1G_traces.jpg`.
+For example if your green mat file is `SS1803_50_Lime_A1_DIV42_1G.mat` and the corresponding red mask file is [SS1803_50_Lime_A1_DIV42_1R_ROI_info_4.mat](https://github.com/LieberInstitute/CaImg_cellcultures/blob/master/test_data/SS1803_50_Lime_A1_DIV42_1R_ROI_info_4.mat). The resulting output files are [SS1803_50_Lime_A1_DIV42_1G_traces.mat](https://github.com/LieberInstitute/CaImg_cellcultures/blob/master/test_data/SS1803_50_Lime_A1_DIV42_1G_traces.mat) and [SS1803_50_Lime_A1_DIV42_1G_traces.jpg](https://github.com/LieberInstitute/CaImg_cellcultures/blob/master/test_data/SS1803_50_Lime_A1_DIV42_1G_traces.jpg).
 
 To run a single file on matlab
 ```matlab
