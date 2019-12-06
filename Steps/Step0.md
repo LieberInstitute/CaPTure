@@ -1,4 +1,4 @@
-#To upload data to the JHPCE cluster from the Lieber servers
+# To upload data to the JHPCE cluster from the Lieber servers
 
 login to the Lieber server through terminal on mac, Mobaxterm, WinSCP, PUTTY etc 
 
