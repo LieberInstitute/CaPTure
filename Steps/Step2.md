@@ -4,7 +4,7 @@ Matlab function used is [segmentation](https://github.com/LieberInstitute/CaImg_
 in the [toolbox](https://github.com/LieberInstitute/CaImg_cellcultures/tree/master/toolbox) directory. 
 Inputs to the [segmentation](https://github.com/LieberInstitute/CaImg_cellcultures/blob/master/toolbox/segmentation.m) function are paths to the red image[*R.czi](https://github.com/LieberInstitute/CaImg_cellcultures/blob/master/test_data/SS1803_50_Lime_A1_DIV42_1R.czi) file,
 microscope and threshold.
-The output of this function produces a Jpeg and a matfile saved in the same directory as the input filename.
+The output of this function produces a jpeg(`SS1803_50_Lime_A1_DIV42_1R4.jpeg`) showing input redimage with its corresponding segmented image and a matfile(`SS1803_50_Lime_A1_DIV42_1R_ROI_info_4.mat`) with table `ROI_info` which has different metrics for each segmented ROI. These files are saved in the same directory as the input red file.
 
 To run a single file on matlab
 ```matlab
