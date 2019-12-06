@@ -3,7 +3,7 @@
 Matlab function [getDFF](https://github.com/LieberInstitute/CaImg_cellcultures/blob/master/toolbox/getDFF.m)
 in the [toolbox](https://github.com/LieberInstitute/CaImg_cellcultures/tree/master/toolbox) directory is used. 
 Inputs to the [getDFF](https://github.com/LieberInstitute/CaImg_cellcultures/blob/master/toolbox/getDFF.m) function are\
-path to the extractes trace mat file `*trace.mat`, tau (rolling window length for dff calculation), metric (either 'mean' or 'median'). 
+path to the extracted trace mat file `*trace.mat`, tau (rolling window length for dff calculation), metric (either 'mean' or 'median'). 
 
 ```matlab
 toolbox = '/LieberInstitute/CaImg_cellcultures/tree/master/toolbox';
