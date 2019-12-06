@@ -13,9 +13,9 @@ This repository describes steps to run Calcium Image processing data of human iP
 [Step3](https://github.com/LieberInstitute/CaImg_cellcultures/blob/master/Steps/Step3.md): Extract traces from step1 using masks from step2\
 [Step4](https://github.com/LieberInstitute/CaImg_cellcultures/blob/master/Steps/Step4.md): Extract dff from step3\
 [Step5](https://github.com/LieberInstitute/CaImg_cellcultures/blob/master/Steps/Step5.md): Construct correlation maps of dff traces from step4 using the motiff library\
-[Step6](https://github.com/LieberInstitute/CaImg_cellcultures/blob/master/Steps/Step6.md): Adjust correlation and intensity thresholds on heat maps from step5 to extract event location and duration\
+[Step6](https://github.com/LieberInstitute/CaImg_cellcultures/blob/master/Steps/Step6.md): Adjust thresholds for motiff correlation and event duration on heat maps from step5 to extract event location and duration\
 [Step7](https://github.com/LieberInstitute/CaImg_cellcultures/blob/master/Steps/Step7.md): Make custom matlab script to extract all the metrics for entire dataset into table format\
-[Step8](https://github.com/LieberInstitute/CaImg_cellcultures/blob/master/Steps/Step8.md): Make custom R script for further analysis\
+[Step8](https://github.com/LieberInstitute/CaImg_cellcultures/blob/master/Steps/Step8.md): Make custom R script for further analysis
 
 Additional Notes\
 #To start command line matlab on jhpce follow these steps
