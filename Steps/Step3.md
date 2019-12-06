@@ -11,7 +11,7 @@ For example if your green mat file is `SS1803_50_Lime_A1_DIV42_1G.mat` and the c
 To run a single file on matlab
 ```matlab
 toolbox = '/LieberInstitute/CaImg_cellcultures/tree/master/toolbox';
-filename = '/Users/madhavitippani/⁨Creative Cloud Files/SS1803_50_Lime_A1_DIV42_1G.mat';
+filename = '/LieberInstitute/CaImg_cellcultures/blob/master/test_data/SS1803_50_Lime_A1_DIV42_1G.mat';
 green = 'G.mat';
 red = 'R_ROI_info_4.mat';
 
