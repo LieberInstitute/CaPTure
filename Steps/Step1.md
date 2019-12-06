@@ -1,4 +1,4 @@
-#To convert `.czi` time series to `.mat` files
+# To convert `.czi` time series to `.mat` files
 
 Matlab function used to convert the file is [store_mat](https://github.com/LieberInstitute/CaImg_cellcultures/blob/master/toolbox/store_mat.m)
 
