@@ -12,8 +12,8 @@ To run a single file on matlab
 ```matlab
 toolbox = '/LieberInstitute/CaImg_cellcultures/tree/master/toolbox';
 filename = '/LieberInstitute/CaImg_cellcultures/blob/master/test_data/SS1803_50_Lime_A1_DIV42_1G.mat';
-green = 'G.mat';
-red = 'R_ROI_info_4.mat';
+green = {'G.mat'}; %parts of green filename which has to be replaced with red to get the ROI segmentation file
+red = {'R_ROI_info_4.mat'};
 
 addpath(genpath(toolbox)) %Add the toolbox to the matlab working directory when ever you begin a new session
 
