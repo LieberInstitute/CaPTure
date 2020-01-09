@@ -1,6 +1,10 @@
 function extract_traces(filename,old,new)
-
-filename1 = strrep(filename,old,new);
+tic
+Dfilename = filename;
+for df= 1:numel(old)
+filename1 = strrep(Dfilename,old{df},new{df});
+Dfilename = filename1;
+end
 
 if isfile(filename1)
 
@@ -21,7 +25,7 @@ for M = 1:m
 end
 
 
- figure
+ figure('Visible','off')
  subplot('position',[0.03 0.02 0.95 0.95]);
  plot_counter = 0;
  ticc = max(ROI(:))-min(ROI(:));
@@ -49,9 +53,11 @@ print(figname,'-djpeg')
 close all
 
 ROI = [table((1:1:T)','VariableNames',{'timepoint'}) array2table(ROI)];
-save([filname(1:end-4),'_traces.mat'],'ROI');
+save([filename(1:end-4),'_traces.mat'],'ROI');
 
   else
     disp(['Red image for file ',filename(1:end-4),' does not exist'])
 end
+
+toc
 end
