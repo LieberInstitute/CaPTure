@@ -1,7 +1,9 @@
 function synchronicity(filename, ext, analysis_type, toolbox)	
 addpath(genpath(toolbox))
 	tic
-load(filename)
+events = load(filename);
+%H = events.H;
+events = events.events;
 spnks = cellfun(@(x) x.Location, events, 'UniformOutput',false);
 
 filename1 = strrep(filename,ext,"");
@@ -9,8 +11,6 @@ disp(filename)
 disp(filename1)
 
 load(filename1,'dff1')
-
-[m,T] = size(dff1);
 
 dff1(isnan(dff1)) = 0;
 		
@@ -60,8 +60,8 @@ set(gcf,'InvertHardCopy', 'off')
 box off
 set(gca,'TickDir','out');
 
-save([filename,'_SCA.mat'],'S')	
-saveas(gcf,[filename,'_SCA.mat'])
+save([filename,'_corrSYN.mat'],'S')	
+saveas(gcf,[filename,'_corrSYN.jpg'])
 
 close all
 toc
