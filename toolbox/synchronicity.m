@@ -60,8 +60,8 @@ set(gcf,'InvertHardCopy', 'off')
 box off
 set(gca,'TickDir','out');
 
-save([filename,'_corrSYN.mat'],'S')	
-saveas(gcf,[filename,'_corrSYN.jpg'])
+save([filename(1:end-4),'_corrSYN.mat'],'S')	
+saveas(gcf,[filename(1:end-4),'_corrSYN.jpg'])
 
 close all
 toc
