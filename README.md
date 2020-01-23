@@ -15,7 +15,7 @@ This repository describes steps to run Calcium Image processing data of human iP
 [Step5](https://github.com/LieberInstitute/CaImg_cellcultures/blob/master/Steps/Step5.md): Construct correlation maps of dff traces from step4 using the motiff library\
 [Step6](https://github.com/LieberInstitute/CaImg_cellcultures/blob/master/Steps/Step6.md): Adjust thresholds for motiff correlation and event duration on heat maps from step5 to extract event location and duration\
 [Synchronicity](https://github.com/LieberInstitute/CaImg_cellcultures/blob/master/Steps/Synchronicity.md): Quantify how synchronous are events between the ROIs of a given field\
-[Step7](https://github.com/LieberInstitute/CaImg_cellcultures/blob/master/Steps/Step7.md): Make custom matlab script to extract all the metrics for entire dataset into table format\
+[Step7](https://github.com/LieberInstitute/CaImg_cellcultures/blob/master/Steps/brown.m): Make custom matlab script to extract all the metrics for entire dataset into table format\
 [Step8](https://github.com/LieberInstitute/CaImg_cellcultures/blob/master/Steps/Step8.md): Make custom R script for further analysis\
 [Registration](https://github.com/LieberInstitute/CaImg_cellcultures/blob/master/Steps/Registration.md): Register green videos from spinning disk microscope.
 
