@@ -46,6 +46,7 @@ addpath(genpath(toolbox))
     out1 = ReadImage6D(redczi);
     image6d1 = out1{1}; %dims = series,time, z, c, x, y
     im = squeeze(image6d1);
+    im = imresize(im, [x y]);
     tform = imregtform(seriesMed, im, 'translation', optimizer, metric);
     
     parfor ii = 1:t
