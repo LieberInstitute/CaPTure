@@ -1,4 +1,4 @@
-# CaImg_cellcultures
+# CaPTure
 
 
 Calcium imaging is a popular tool among neuroscientists because of its capability to monitor large neural populations across weeks with single neuron and single spike resolution. 
