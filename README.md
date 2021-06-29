@@ -6,6 +6,7 @@ The technique measures the calcium ions (proxy for neuronal activity) by imaging
 Calcium imaging allows us to measure activity in single cells and have a measure of network dynamics. 
 
 This repository describes steps to run Calcium Image processing data of human iPSC cultures across development.
+
 [Installation](https://github.com/LieberInstitute/CaImg_cellcultures/blob/master/Steps/Installation.md): Software requirements and installation\
 [Step0](https://github.com/LieberInstitute/CaImg_cellcultures/blob/master/Steps/Step0.md): Upload data to JHPCE cluster\
 [Step1](https://github.com/LieberInstitute/CaImg_cellcultures/blob/master/Steps/Step1.md): Convert .czi time series files to .mat files\
