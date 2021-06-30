@@ -15,9 +15,7 @@ Once the repository is downloaded, the user can run either of the following code
 
 
 # Software
-The pipeline was developed under the following software configuration.
-\centering
-![](images/Software_Configuration.png)
+
 `CaPTure` has been tested on Linux, Windows and MacOS.
 
 1. `MATLAB` 
