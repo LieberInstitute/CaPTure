@@ -1,5 +1,6 @@
-# CaPTure
+# CaPTure <img src="images/logo.png" align="right" width="150px"/>
 
+Welcome to `CaPTure`! 
 
 Calcium imaging is a popular tool among neuroscientists because of its capability to monitor large neural populations across weeks with single neuron and single spike resolution. 
 The technique measures the calcium ions (proxy for neuronal activity) by imaging fluorescence intensity in neurons loaded with calcium-sensitive dye.
@@ -55,3 +56,23 @@ For product information, visit www.mathworks.com.
 >> 
 ```
 Setting X11 Forwarding for GUI Applications https://www.hoffman2.idre.ucla.edu/access/x11_forwarding/
+
+
+# Cite `CaPTure` {-}
+
+We hope that [`CaPTure`] will be useful for your research. Please use the following information to cite the package and the overall approach. Thank you!
+```
+@article {Tippani2021,
+	author = {Tippani, Madhavi and Pattie , Elizabeth A. and Davis, Brittany A. and Nguyen, Claudia V. and Wang, Yanhong and Sripathy, Srinidhi Rao and Maher, Brady J.      Martinowich, Keri and Jaffe, Andrew E. and Page, Stephanie C.},
+	title = {CaPTure: Calcium Peak Toolbox for analysis of in vitro calcium imaging data},
+	year = {2021},
+	doi = {TODO},
+	publisher = {Cold Spring Harbor Laboratory},
+	URL = {TODO},
+	journal = {bioRxiv}
+}
+```
+Project lead: [Madhavi Tippani](https://twitter.com/MadhaviTippani), Staff Scientist I and [Stephanie C. Page], Staff Scientist II in the **Imaging Development Group** at the [Lieber Institute for Brain Development](https://www.libd.org/).
+<center>
+<img src="http://lcolladotor.github.io/img/LIBD_logo.jpg" width="250px">
+</center>
