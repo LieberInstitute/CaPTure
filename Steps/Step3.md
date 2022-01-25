@@ -26,8 +26,8 @@ If the extraction time is less use `for loop` to process the entire dataset file
 
 myfiles = dir('/PathToDataset/*G.mat');
 toolbox = '/LieberInstitute/CaImg_cellcultures/tree/master/toolbox'; 
-green = 'G.mat';
-red = 'R_ROI_info_4.mat';
+green = {'G.mat'}; %parts of green filename which has to be replaced with red to get the ROI segmentation file
+red = {'R_ROI_info_4.mat'};
 
 addpath(genpath(toolbox)) %Add the toolbox to the matlab working directory when ever you begin a new session
 
