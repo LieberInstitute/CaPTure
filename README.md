@@ -9,7 +9,7 @@ Calcium imaging allows us to measure activity in single cells and have a measure
 This repository describes steps to run Calcium Image processing data of human iPSC cultures across development.
 
 [Installation](https://github.com/LieberInstitute/CaImg_cellcultures/blob/master/Steps/Installation.md): Software requirements and installation\
-[Step0](https://github.com/LieberInstitute/CaImg_cellcultures/blob/master/Steps/Step0.md): Upload data to JHPCE cluster. This step is specific to Lieber institue workflow and can be skipped\
+[Step0](https://github.com/LieberInstitute/CaImg_cellcultures/blob/master/Steps/Step0.md): Upload data to JHPCE cluster. This step is specific to Lieber institute workflow and data generated in-house. This step can be skipped and continue to next step for all other datasets.\
 [Step1](https://github.com/LieberInstitute/CaImg_cellcultures/blob/master/Steps/Step1.md): Convert .czi time series files to .mat files\
 [Step2](https://github.com/LieberInstitute/CaImg_cellcultures/blob/master/Steps/Step2.md): Parallel with step 1 run segmentation of the red image to get the ROI masks by adjusting thresholds based on scope\
 [Step3](https://github.com/LieberInstitute/CaImg_cellcultures/blob/master/Steps/Step3.md): Extract traces from step1 using masks from step2\
