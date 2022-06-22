@@ -23,7 +23,7 @@ If the segmentation time is less use `for loop` to process the entire dataset fi
 
 myfiles = dir('/PathToDataset/*R.czi');
 toolbox = '/LieberInstitute/CaImg_cellcultures/tree/master/toolbox'; 
-microscope = '780';
+microscope = '780'; % the user can input 'SD' for spinning disk microscope and 'Chronic' for Chronic microscope which will automatically set parameters like ROI size in the `segmentation` function.
 thresh = 4;
 
 addpath(genpath(toolbox)) %Add the toolbox to the matlab working directory when ever you begin a new session
